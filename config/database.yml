@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: heroku_multiple_env_development
+  pool: 5
+  username: matt
+  password:
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: heroku_multiple_env_test
+  pool: 5
+  username: matt
+  password:
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: heroku_multiple_env_production
+  pool: 5
+  username: matt
+  password:
