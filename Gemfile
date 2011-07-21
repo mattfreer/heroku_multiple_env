@@ -27,3 +27,7 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :production do
+  gem "therubyracer", "~> 0.8.2.pre" #bleeding edge.
+end
