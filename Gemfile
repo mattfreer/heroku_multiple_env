@@ -29,5 +29,5 @@ group :test do
 end
 
 group :production do
-  gem "therubyracer", "~> 0.8.2.pre" #bleeding edge.
+  gem 'therubyracer-heroku', '0.8.1.pre3'
 end
