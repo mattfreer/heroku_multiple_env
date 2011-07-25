@@ -28,6 +28,7 @@ group :test do
   gem 'turn', :require => false
 end
 
-group :production do
+group :staging do
   gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'thin'
 end
