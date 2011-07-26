@@ -10,7 +10,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'delayed_job'
+gem 'redis'
+gem 'resque'
 
 group :test do
   # Pretty printed test output

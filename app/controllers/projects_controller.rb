@@ -41,6 +41,7 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @project = Project.new(params[:project])
+    Resque.enqueue(Eat, params[:project][:name])
 
     respond_to do |format|
       if @project.save
