@@ -1,4 +1,5 @@
 .bundle
+.sass-cache
 *.rvmrc
 db/*.sqlite3*
 log/*.log
@@ -11,3 +12,4 @@ doc/app
 *~
 .DS_Store
 Capfile
+config/database.yml

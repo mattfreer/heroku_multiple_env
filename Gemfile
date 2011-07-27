@@ -3,11 +3,16 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0.rc4'
 gem 'pg'
 
-gem 'sass-rails', "~> 3.1.0.rc"
-gem 'coffee-script'
-gem 'uglifier'
+group :assets do
+  gem 'sass-rails', "~> 3.1.0.rc"
+  gem 'coffee-script'
+  gem 'uglifier'
+end
+
 gem 'jquery-rails'
-gem 'delayed_job'
+gem 'redis'
+gem 'resque'
+gem 'resque-async_deliver'
 
 group :test do
   # Pretty printed test output
