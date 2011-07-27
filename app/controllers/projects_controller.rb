@@ -42,6 +42,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     Resque.enqueue(Eat, params[:project][:name])
+    ProjectMailer.async_deliver.new_project_notification(@project.name)
 
     respond_to do |format|
       if @project.save

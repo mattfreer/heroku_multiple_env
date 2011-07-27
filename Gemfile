@@ -12,6 +12,7 @@ end
 gem 'jquery-rails'
 gem 'redis'
 gem 'resque'
+gem 'resque-async_deliver'
 
 group :test do
   # Pretty printed test output
