@@ -11,7 +11,7 @@ end
 
 gem 'jquery-rails'
 gem 'redis'
-gem 'resque'
+gem 'resque', :require => 'resque/server'
 gem 'resque-async_deliver'
 
 group :test do
