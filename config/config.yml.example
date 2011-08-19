@@ -1,0 +1,7 @@
+development:
+  admin_area_login: admin
+  admin_area_password: admin
+
+test:
+  admin_area_login: admin
+  admin_area_password: admin
